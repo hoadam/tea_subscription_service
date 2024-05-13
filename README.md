@@ -1,24 +1,39 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Tea Subscription API
+This API is built for a tea subscription service that requires 3 endpoints:
+- An endpoint to subscribe a customer to a tea subscription
+- An endpoint to cancel a customer's tea subscription
+- An endpoint to see all of a customer's subscription (active and cancelled)
 
-Things you may want to cover:
+### Prerequisites
+- Ruby (version >= 3.2.2)
+- Rails (version >= 7.1.3.2)
+- PostgreSQL
 
-* Ruby version
+### Installation
+1. Clone the repository:
 
-* System dependencies
+    ```bash
+    git clone <repository_url>
+    ```
 
-* Configuration
+2. Install dependencies:
 
-* Database creation
+    ```bash
+    bundle install
+    ```
 
-* Database initialization
+3. Set up the database:
 
-* How to run the test suite
+    ```bash
+    rails db:{drop,create,migrate,seed}
+    ```
+## RESTful Endpoints
+```
+GET /api/v1/customers/:customer_id/subscriptions
 
-* Services (job queues, cache servers, search engines, etc.)
+POST /api/v1/customers/:customer_id/subscriptions
 
-* Deployment instructions
+DELETE /api/v1/customers/:customer_id/subscriptions/:subscription_id
 
-* ...
