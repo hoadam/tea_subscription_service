@@ -37,3 +37,5 @@ POST /api/v1/customers/:customer_id/subscriptions
 
 DELETE /api/v1/customers/:customer_id/subscriptions/:subscription_id
 
+![tea_sub_db](https://github.com/hoadam/tea_subscription_service/assets/13019517/ba548575-891d-4cac-8517-2e77dcb5937f)
+
